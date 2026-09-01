@@ -224,11 +224,3 @@ AI_USAGE.md              TODO after a live run
 AI_WORKFLOW.md           TODO after a live run
 REFLECTION.md            TODO after a live run
 ```
-
-## What's not done yet
-
-`EVAL_CASES.md` and `AI_USAGE.md` still need to be filled in from a
-complete live run (one where every case finishes, i.e. no
-`system_unavailable`/`system_degraded` entries) — `PROGRESS_LOG.md`
-has the real dev history, and `AI_WORKFLOW.md` / `REFLECTION.md` already
-have substantive first drafts to build on rather than empty templates.
