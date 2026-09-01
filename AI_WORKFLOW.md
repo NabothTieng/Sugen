@@ -37,6 +37,3 @@ steps that need actual clinical judgment; `gemini-2.5-flash` chosen over
 rate-limit headroom (only 5 RPM / ~50-100 RPD free) given the pipeline
 easily exceeds that in a single full run.
 
-**5. Something you deliberately did not delegate to AI**
-> Fill in from your own local session — this needs to be a real "I did
-> this part myself and here's why" answer, not generated.
