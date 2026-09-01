@@ -41,13 +41,19 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv not installed — fall back to whatever's already in the environment
+
 ROOT = Path(__file__).parent
 DATA_DIR = ROOT / "data"
 CACHE_DIR = ROOT / "cache"
 OUT_DIR = ROOT / "outputs"
 LOG_PATH = ROOT / "PROGRESS_LOG.md"
 
-MODEL_NAME = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL_NAME = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
 
 TOP_K_CODES = 15
 TOP_K_GUIDELINES = 8

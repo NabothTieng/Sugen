@@ -1,0 +1,19 @@
+{
+  "case_id": "P-03",
+  "call": "call1_synthesis",
+  "prompt_hash": "91bc85253f91bfe1",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T22:00:22.209205+00:00",
+  "response": {
+    "chief_complaint_evolution": "Initial reported presentation of a 3-year-old child with a barking cough, nocturnal noisy breathing, hoarse voice, and low-grade fever.",
+    "key_findings_timeline": [
+      {
+        "time": "unknown",
+        "finding": "Child, 3, barking cough with noisy breathing at night, hoarse voice, low-grade fever."
+      }
+    ],
+    "end_state_clinical_picture": "3-year-old displaying classic clinical features of croup (barking cough, hoarseness, nocturnal noisy breathing, and low-grade fever). No formal workup, diagnoses confirmed, or exclusions documented yet.",
+    "pending_vs_confirmed": "No diagnostic tests or laboratory results were ordered, pending, or confirmed in the provided note.",
+    "disregarded_content": []
+  }
+}

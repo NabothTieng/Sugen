@@ -1,0 +1,27 @@
+{
+  "case_id": "EP-01",
+  "call": "call1_synthesis",
+  "prompt_hash": "fb30994f0c461d7a",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T21:57:58.660905+00:00",
+  "response": {
+    "chief_complaint_evolution": "Initially presented with fever ('homa') for 5 days accompanied by chills, sweating, and headache following travel to Kisumu. By day 7, the fever persisted with a stepwise rise, and symptoms evolved to include abdominal pain and constipation.",
+    "key_findings_timeline": [
+      {
+        "time": "2026-08-19T09:10",
+        "finding": "c/o homa x5 days, on and off with chills + sweating. headache. recently travelld to kisumu for funeral. temp 38.9."
+      },
+      {
+        "time": "2026-08-19T11:40",
+        "finding": "Blood smear: no malaria parasites seen."
+      },
+      {
+        "time": "2026-08-21T10:05",
+        "finding": "fever persisting, now day 7. stepwise rise, temp 39.4 but pulse only 78. abd pain, constipated. repeat BS again negative. rose spots noted on trunk."
+      }
+    ],
+    "end_state_clinical_picture": "Malaria has been ruled out after two negative blood smears. The patient demonstrates clinical features strongly suggestive of enteric/typhoid fever (stepwise high fever, relative bradycardia, abdominal pain, constipation, and rose spots on the trunk). Empiric treatment has been initiated while awaiting diagnostic confirmation.",
+    "pending_vs_confirmed": "Ruled Out: Malaria (repeat blood smears negative). Pending: Widal test and blood culture results. Confirmed/Presumptive: Clinically suspected typhoid fever based on physical findings and symptom cluster.",
+    "disregarded_content": []
+  }
+}

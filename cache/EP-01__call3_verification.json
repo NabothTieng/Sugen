@@ -1,0 +1,35 @@
+{
+  "case_id": "EP-01",
+  "call": "call3_verification",
+  "prompt_hash": "1b48d38a06d665b3",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T21:58:15.825566+00:00",
+  "response": {
+    "final_codes": [
+      {
+        "code": "1A07",
+        "title": "Typhoid fever",
+        "evidence_quotes": [
+          "fever persisting, now day 7. stepwise rise, temp 39.4 but pulse only 78. abd pain, constipated.",
+          "rose spots noted on trunk."
+        ],
+        "confirmation_level": "probable",
+        "guideline_ids_used": [
+          "GDL-030"
+        ],
+        "reasoning": "The patient demonstrates classic signs of typhoid fever including a 7-day sustained stepwise fever, relative bradycardia (temp 39.4 with pulse 78), abdominal pain, constipation, and pathognomonic rose spots. Malaria was ruled out via repeat negative blood smears, and empiric treatment for typhoid fever was initiated while formal lab confirmation is pending."
+      }
+    ],
+    "no_confident_match": false,
+    "confidence": "high",
+    "audit_trail": {
+      "notes_contributing": [
+        "triage nurse 2026-08-19T09:10",
+        "lab 2026-08-19T11:40",
+        "clinical officer 2026-08-21T10:05"
+      ],
+      "disregarded": [],
+      "changes_from_draft": "none"
+    }
+  }
+}

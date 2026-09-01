@@ -1,0 +1,26 @@
+{
+  "case_id": "P-03",
+  "call": "call2_coding",
+  "prompt_hash": "f4ef57a83cd64c76",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T22:00:30.813973+00:00",
+  "response": {
+    "codes": [
+      {
+        "code": "CA20",
+        "title": "Croup (acute laryngotracheobronchitis)",
+        "evidence_quotes": [
+          "barking cough",
+          "noisy breathing at night",
+          "hoarse voice",
+          "low-grade fever"
+        ],
+        "confirmation_level": "probable",
+        "guideline_ids_used": [],
+        "reasoning": "The 3-year-old child presents with the classic symptom cluster of croup, including a characteristic barking cough, nocturnal noisy breathing, hoarse voice, and low-grade fever."
+      }
+    ],
+    "confidence": "high",
+    "no_confident_match": false
+  }
+}

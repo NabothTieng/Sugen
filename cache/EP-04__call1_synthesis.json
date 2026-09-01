@@ -1,0 +1,23 @@
+{
+  "case_id": "EP-04",
+  "call": "call1_synthesis",
+  "prompt_hash": "84e3686f190bada6",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T21:58:59.310369+00:00",
+  "response": {
+    "chief_complaint_evolution": "Initial routine ANC visit presentation with headache x3 days, visual disturbance ('eyes flickering'), feeling warm at night ('homa?'), and RUQ pain on deep palpation. Evaluated 40 minutes later with repeat elevated BP and documented normal temperature.",
+    "key_findings_timeline": [
+      {
+        "time": "2026-08-22T09:00",
+        "finding": "BP 158/104. urine protein 2+. RUQ pain on deep palpation. c/o headache x3 days + 'eyes flickering'. felt warm at night."
+      },
+      {
+        "time": "2026-08-22T09:40",
+        "finding": "BP repeat 154/102 after rest. temp 36.8. BS negative."
+      }
+    ],
+    "end_state_clinical_picture": "24-year-old G1P0 at 26 weeks gestational age presenting with symptoms and signs strongly suggestive of pre-eclampsia with severe features (persistent severe hypertension, 2+ proteinuria, headache, visual symptoms, and RUQ tenderness). Afebril and blood smear negative for malaria. Referred urgently to district hospital obstetrics team.",
+    "pending_vs_confirmed": "Confirmed: Elevated BP (158/104, repeat 154/102), proteinuria (2+), normal temperature (36.8\u00b0C), and negative blood smear for malaria. Pending: Formal obstetric/gynecological specialist assessment at district hospital, baseline lab workup (e.g., LFTs, CBC/platelets, renal function, uric acid).",
+    "disregarded_content": []
+  }
+}

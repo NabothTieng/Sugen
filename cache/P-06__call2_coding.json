@@ -1,0 +1,25 @@
+{
+  "case_id": "P-06",
+  "call": "call2_coding",
+  "prompt_hash": "ceb24ef7dec7ca59",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T22:01:04.691726+00:00",
+  "response": {
+    "codes": [
+      {
+        "code": "9A02",
+        "title": "Acute angle-closure glaucoma",
+        "evidence_quotes": [
+          "Severe right eye pain with blurred vision and haloes around lights since evening, eye red and hard, vomiting."
+        ],
+        "confirmation_level": "probable",
+        "guideline_ids_used": [
+          "GDL-023"
+        ],
+        "reasoning": "The patient presents with the classic triad and associated signs of acute angle-closure glaucoma, including severe unilateral eye pain, blurred vision with haloes around lights, a red and hard eye, and associated vomiting. Per GDL-023, this distinct clinical pattern warrants the diagnosis of acute angle-closure glaucoma."
+      }
+    ],
+    "confidence": "high",
+    "no_confident_match": false
+  }
+}

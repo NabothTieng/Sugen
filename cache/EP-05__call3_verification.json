@@ -1,0 +1,34 @@
+{
+  "case_id": "EP-05",
+  "call": "call3_verification",
+  "prompt_hash": "56f0e22e22b2dfc3",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T21:59:36.755951+00:00",
+  "response": {
+    "final_codes": [
+      {
+        "code": "1C12",
+        "title": "Tuberculosis of lung",
+        "evidence_quotes": [
+          "kikohozi x3 wks",
+          "night sweats",
+          "wt loss 2kg",
+          "coughed streaks of blood",
+          "sputum sent for genexpert - result awaited"
+        ],
+        "confirmation_level": "suspected/pending",
+        "reasoning": "The patient presents with classic features of pulmonary tuberculosis including a chronic 3-week cough unresponsive to amoxicillin, hemoptysis, night sweats, unintentional weight loss, and household TB exposure, aligned with GDL-019. As sputum GeneXpert testing is pending and anti-TB treatment is withheld until test confirmation, the condition is coded as suspected/pending."
+      }
+    ],
+    "no_confident_match": false,
+    "confidence": "high",
+    "audit_trail": {
+      "notes_contributing": [
+        "clinical officer 2026-08-18T10:15",
+        "clinical officer 2026-08-18T11:00"
+      ],
+      "disregarded": [],
+      "changes_from_draft": "none"
+    }
+  }
+}

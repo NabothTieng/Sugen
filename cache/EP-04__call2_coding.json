@@ -1,0 +1,29 @@
+{
+  "case_id": "EP-04",
+  "call": "call2_coding",
+  "prompt_hash": "a2fdd642fa5a550a",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T21:59:06.878113+00:00",
+  "response": {
+    "codes": [
+      {
+        "code": "JA63",
+        "title": "Pre-eclampsia",
+        "evidence_quotes": [
+          "c/o headache x3 days + 'eyes flickering'.",
+          "BP 158/104.",
+          "urine protein 2+.",
+          "RUQ pain on deep palpation",
+          "BP repeat 154/102 after rest."
+        ],
+        "confirmation_level": "confirmed",
+        "guideline_ids_used": [
+          "GDL-009"
+        ],
+        "reasoning": "The patient meets diagnostic criteria for pre-eclampsia beyond 20 weeks gestation, presenting with persistent severe hypertension, proteinuria (2+), visual symptoms, headache, and right upper quadrant abdominal tenderness. Per GDL-009, this presentation should be coded as pre-eclampsia rather than isolated headache or abdominal pain."
+      }
+    ],
+    "confidence": "high",
+    "no_confident_match": false
+  }
+}

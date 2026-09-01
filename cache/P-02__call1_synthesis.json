@@ -1,0 +1,19 @@
+{
+  "case_id": "P-02",
+  "call": "call1_synthesis",
+  "prompt_hash": "5a1c4248c0d1407b",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T21:59:59.005345+00:00",
+  "response": {
+    "chief_complaint_evolution": "Patient reported left calf swelling, warmth, and tenderness accompanied by pain on dorsiflexion, arising after a prolonged 14-hour bus trip.",
+    "key_findings_timeline": [
+      {
+        "time": "unknown",
+        "finding": "Left calf swollen, warm and tender after a 14-hour bus journey from Mombasa, pain on dorsiflexion."
+      }
+    ],
+    "end_state_clinical_picture": "Clinical presentation is highly suspicious for deep vein thrombosis (DVT) of the left lower extremity due to prolonged immobilization (14-hour travel) combined with classic physical exam signs (swelling, warmth, tenderness, pain on dorsiflexion). Objective diagnostic evaluation is required.",
+    "pending_vs_confirmed": "Confirmed: Physical signs of left calf swelling, warmth, tenderness, and pain on dorsiflexion following prolonged travel. Pending: Objective diagnostic confirmation (such as a venous duplex ultrasound or D-dimer testing), as no objective imaging or lab results have been reported yet.",
+    "disregarded_content": []
+  }
+}

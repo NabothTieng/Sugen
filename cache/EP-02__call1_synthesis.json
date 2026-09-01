@@ -1,0 +1,23 @@
+{
+  "case_id": "EP-02",
+  "call": "call1_synthesis",
+  "prompt_hash": "c58f0ce2f0db2151",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T21:58:24.076316+00:00",
+  "response": {
+    "chief_complaint_evolution": "Initially presented with lower urinary tract symptoms (dysuria x2 days, frequency, urgency, suprapubic discomfort) without fever or flank pain. Two days later, deteriorated with severe systemic and upper urinary tract symptoms including fever (39.1), rigors, right flank pain, and vomiting.",
+    "key_findings_timeline": [
+      {
+        "time": "2026-08-20T08:30",
+        "finding": "no fever no flank pain. urine dip: leuk+, nitrite+"
+      },
+      {
+        "time": "2026-08-22T16:15",
+        "finding": "homa 39.1, rigors, R flank pain, CVA tenderness marked. vomitted x2"
+      }
+    ],
+    "end_state_clinical_picture": "Patient has progressed from a lower UTI to acute pyelonephritis/severe UTI with systemic involvement (fever 39.1, rigors, vomiting, marked CVA tenderness) requiring inpatient admission, IV fluids, and IV antibiotic escalation.",
+    "pending_vs_confirmed": "Confirmed: Positive urine dipstick (leukocytes+, nitrites+), clinical signs of acute pyelonephritis (fever, marked CVA tenderness, right flank pain, vomiting). Pending: No additional formal laboratory or culture results are explicitly noted as pending in the record.",
+    "disregarded_content": []
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "episode_id": "C-01",
+    "status": "system_unavailable",
+    "stage_failed": "call1_synthesis",
+    "final_codes": [],
+    "no_confident_match": true,
+    "note": "LLM unreachable during synthesis; episode requires manual review.",
+    "expected": "1C60",
+    "match": false
+  },
+  {
+    "episode_id": "C-02",
+    "status": "system_unavailable",
+    "stage_failed": "call1_synthesis",
+    "final_codes": [],
+    "no_confident_match": true,
+    "note": "LLM unreachable during synthesis; episode requires manual review.",
+    "expected": "1C12",
+    "match": false
+  },
+  {
+    "episode_id": "C-03",
+    "status": "system_unavailable",
+    "stage_failed": "call1_synthesis",
+    "final_codes": [],
+    "no_confident_match": true,
+    "note": "LLM unreachable during synthesis; episode requires manual review.",
+    "expected": "ND76",
+    "match": false
+  },
+  {
+    "episode_id": "C-04",
+    "status": "system_unavailable",
+    "stage_failed": "call1_synthesis",
+    "final_codes": [],
+    "no_confident_match": true,
+    "note": "LLM unreachable during synthesis; episode requires manual review.",
+    "expected": "1D91",
+    "match": false
+  },
+  {
+    "episode_id": "C-05",
+    "status": "system_unavailable",
+    "stage_failed": "call1_synthesis",
+    "final_codes": [],
+    "no_confident_match": true,
+    "note": "LLM unreachable during synthesis; episode requires manual review.",
+    "expected": "1A07",
+    "match": false
+  }
+]

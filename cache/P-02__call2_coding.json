@@ -1,0 +1,25 @@
+{
+  "case_id": "P-02",
+  "call": "call2_coding",
+  "prompt_hash": "fe51a8debc8965f4",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-01T22:00:09.966332+00:00",
+  "response": {
+    "codes": [
+      {
+        "code": "BD10",
+        "title": "Deep vein thrombosis",
+        "evidence_quotes": [
+          "Left calf swollen, warm and tender after a 14-hour bus journey from Mombasa, pain on dorsiflexion."
+        ],
+        "confirmation_level": "suspected/pending",
+        "guideline_ids_used": [
+          "GDL-021"
+        ],
+        "reasoning": "The patient presents with classic signs of deep vein thrombosis (unilateral calf swelling, warmth, tenderness, and pain on dorsiflexion) after a 14-hour bus trip. Per GDL-021, this clinical pattern strongly points to DVT, though definitive objective testing remains pending."
+      }
+    ],
+    "confidence": "high",
+    "no_confident_match": false
+  }
+}
