@@ -1,0 +1,157 @@
+[
+  {
+    "id": "GDL-001",
+    "linked_codes": ["BA41", "BA40"],
+    "text": "Chest pain guideline: Central/substernal chest pain with radiation to the left arm or jaw, associated diaphoresis, and dyspnea should be treated as acute coronary syndrome until proven otherwise. Pain that is reproducible on palpation of the chest wall, sharp/stabbing in character, and unrelated to exertion is more consistent with a musculoskeletal cause and should NOT be coded as myocardial infarction without supporting features."
+  },
+  {
+    "id": "GDL-002",
+    "linked_codes": ["BE2Z"],
+    "text": "Pericarditic chest pain classically improves when the patient leans forward and worsens when lying supine. A pericardial friction rub, if documented, is a strong supporting sign. This pattern should not be conflated with typical exertional angina."
+  },
+  {
+    "id": "GDL-003",
+    "linked_codes": ["CA22", "CA23"],
+    "text": "Distinguishing pneumonia from acute bronchitis: focal crackles or dullness on exam plus fever and a productive cough support community-acquired pneumonia. Diffuse wheeze/cough without focal findings and without fever is more consistent with acute bronchitis. Imaging or focal exam findings are the deciding factor when both are plausible."
+  },
+  {
+    "id": "GDL-004",
+    "linked_codes": ["8B00", "8B20"],
+    "text": "Any sudden-onset focal neurological deficit (unilateral weakness, facial droop, speech disturbance) is a time-critical presentation. If the deficit has fully resolved by the time of assessment with no residual findings, consider transient ischaemic attack; if deficit is ongoing, treat as suspected cerebral infarction. Both require the same urgency of escalation regardless of which code is ultimately used."
+  },
+  {
+    "id": "GDL-005",
+    "linked_codes": ["8A80", "8A81"],
+    "text": "Headache red flags requiring escalation beyond routine primary headache coding: sudden 'thunderclap' onset, new headache after age 50, headache with fever and neck stiffness, headache with focal neurological signs, or headache worsening despite standard analgesia. In the absence of red flags, unilateral pulsating headache with photophobia/phonophobia and nausea supports migraine; bilateral, band-like, pressure-type headache without associated nausea supports tension-type headache."
+  },
+  {
+    "id": "GDL-006",
+    "linked_codes": ["1D00"],
+    "text": "Fever, headache, and neck stiffness together — particularly with photophobia or altered mental status — should raise immediate concern for bacterial meningitis and be treated as a medical emergency, distinct from a routine primary headache disorder."
+  },
+  {
+    "id": "GDL-007",
+    "linked_codes": ["GC08", "GC01"],
+    "text": "Lower urinary tract infection (cystitis) presents with dysuria, frequency, and suprapubic discomfort without systemic features. The presence of fever, flank pain, or costovertebral angle tenderness indicates the infection has ascended to the kidney and should be coded as pyelonephritis, not simple cystitis, as management urgency differs."
+  },
+  {
+    "id": "GDL-008",
+    "linked_codes": ["GB70"],
+    "text": "Colicky flank pain that radiates toward the groin, especially with visible or microscopic haematuria and no fever, is the classic pattern for a renal/ureteric stone rather than infection."
+  },
+  {
+    "id": "GDL-009",
+    "linked_codes": ["JA63"],
+    "text": "In a pregnant patient beyond 20 weeks gestation, new headache, visual disturbance (blurring, flashing lights), or epigastric/right-upper-quadrant pain should prompt blood pressure and urine protein assessment for pre-eclampsia before being attributed to a benign cause. This combination of symptoms in pregnancy should not be coded simply as headache or abdominal pain."
+  },
+  {
+    "id": "JB00-note",
+    "linked_codes": ["JB00"],
+    "text": "Any patient of reproductive age with a positive pregnancy status (confirmed or suspected) presenting with abdominal pain and vaginal bleeding must have ectopic pregnancy actively excluded before any other abdominal diagnosis is finalized, given the risk of rupture."
+  },
+  {
+    "id": "GDL-010",
+    "linked_codes": ["DB90", "DA92"],
+    "text": "Periumbilical pain that migrates to and localizes in the right lower quadrant, with associated fever and rebound tenderness on exam, is the classic evolution of acute appendicitis. Diffuse crampy abdominal pain with vomiting and watery diarrhoea, without localized peritoneal signs, favours acute gastroenteritis instead."
+  },
+  {
+    "id": "GDL-011",
+    "linked_codes": ["DB80"],
+    "text": "Right upper quadrant pain with a positive Murphy's sign (pain and inspiratory arrest on palpation under the right costal margin during deep breath) plus fever supports acute cholecystitis, particularly with a history of fatty food intolerance or known gallstones."
+  },
+  {
+    "id": "GDL-012",
+    "linked_codes": ["DB30"],
+    "text": "Severe, constant epigastric pain radiating straight through to the back, often with a history of alcohol use or known gallstones, and associated with persistent vomiting, should raise suspicion for acute pancreatitis; lipase/amylase elevation supports this over simple gastritis."
+  },
+  {
+    "id": "GDL-013",
+    "linked_codes": ["FA20", "FA20.1"],
+    "text": "Joint pain that is worse with use and improves with rest, with morning stiffness resolving in under 30 minutes, and affecting large weight-bearing joints, is typical of osteoarthritis. Symmetric small-joint involvement (hands, wrists) with morning stiffness lasting over an hour favours an inflammatory/autoimmune process such as rheumatoid arthritis instead."
+  },
+  {
+    "id": "GDL-014",
+    "linked_codes": ["FB32"],
+    "text": "Sudden severe monoarticular pain and swelling, classically affecting the first metatarsophalangeal joint ('big toe'), with skin so tender that even bedsheet contact is painful, is the hallmark presentation of an acute gout flare."
+  },
+  {
+    "id": "GDL-015",
+    "linked_codes": ["5A11", "5A10"],
+    "text": "Polyuria, polydipsia, and unexplained weight loss in an adult with overweight/obesity and a gradual symptom onset over months is more consistent with type 2 diabetes. The same triad with rapid onset over days to weeks, in a younger or normal-weight individual, particularly with associated nausea/vomiting or fruity breath odour, should raise concern for type 1 diabetes and possible diabetic ketoacidosis."
+  },
+  {
+    "id": "GDL-016",
+    "linked_codes": ["5A61", "5A62"],
+    "text": "Fatigue, cold intolerance, weight gain, and constipation point toward an underactive thyroid. Weight loss despite preserved or increased appetite, heat intolerance, tremor, and palpitations point toward an overactive thyroid. These are near-opposite symptom clusters and should not be confused."
+  },
+  {
+    "id": "GDL-017",
+    "linked_codes": ["1D91"],
+    "text": "Any patient with a suspected or confirmed infection who additionally shows signs of new organ dysfunction — altered mental status, low blood pressure, rapid heart rate, reduced urine output, or laboured breathing — should be considered for sepsis rather than the localized infection code alone, as this changes the urgency of the case substantially."
+  },
+  {
+    "id": "GDL-018",
+    "linked_codes": ["1C60"],
+    "text": "Localized skin redness, warmth, and swelling with tenderness, without signs of systemic organ dysfunction, is consistent with uncomplicated cellulitis."
+  },
+  {
+    "id": "GDL-019",
+    "linked_codes": ["1C12"],
+    "text": "A cough persisting longer than two weeks, especially with haemoptysis, night sweats, and unintentional weight loss, should prompt consideration of pulmonary tuberculosis, particularly in patients with relevant exposure history — this should not be coded as simple acute bronchitis."
+  },
+  {
+    "id": "GDL-020",
+    "linked_codes": ["1F40"],
+    "text": "Cyclical or recurring fever with chills and sweats in a patient with recent travel to or residence in a malaria-endemic area should prompt testing for malaria before attributing the fever to a non-specific viral illness."
+  },
+  {
+    "id": "GDL-021",
+    "linked_codes": ["BD10"],
+    "text": "Unilateral leg swelling with warmth, tenderness along the deep venous system, and pain on calf compression or ankle dorsiflexion is the classic pattern for deep vein thrombosis, particularly with risk factors such as recent immobility, surgery, or long travel."
+  },
+  {
+    "id": "GDL-022",
+    "linked_codes": ["CA81"],
+    "text": "Sudden-onset unilateral pleuritic chest pain and breathlessness in a tall, thin, young adult without preceding trauma, especially with reduced breath sounds on the affected side, is a classic pattern for spontaneous pneumothorax."
+  },
+  {
+    "id": "GDL-023",
+    "linked_codes": ["9A02"],
+    "text": "Sudden severe eye pain with blurred vision, a red eye, and haloes seen around lights is an ophthalmic emergency pattern consistent with acute angle-closure glaucoma and should not be coded as simple conjunctivitis."
+  },
+  {
+    "id": "GDL-024",
+    "linked_codes": ["6B40"],
+    "text": "Discrete, sudden episodes of intense fear with palpitations, chest tightness, and a sense of impending doom, peaking within minutes and followed by fear of recurrence, are characteristic of panic attacks within panic disorder, distinguishable from generalised, persistent worry."
+  },
+  {
+    "id": "GDL-025",
+    "linked_codes": ["3B63"],
+    "text": "Easy bruising, pinpoint non-blanching spots on the skin (petechiae), and mucosal bleeding with an isolated low platelet count on labs, in the absence of other cytopenias, supports an immune-mediated platelet destruction process."
+  },
+  {
+    "id": "GDL-026",
+    "linked_codes": ["NE60"],
+    "text": "Brief loss of awareness or confusion following head trauma, with normal structural brain imaging, headache, and difficulty concentrating that resolves over days to weeks, is consistent with concussion rather than a more severe traumatic brain injury."
+  },
+  {
+    "id": "GDL-027",
+    "linked_codes": ["AB30"],
+    "text": "Facial pain or pressure with purulent nasal discharge persisting beyond 10 days, or symptoms that initially improve then worsen again ('double-sickening'), distinguishes bacterial sinusitis from a simple viral upper respiratory infection."
+  },
+  {
+    "id": "GDL-028",
+    "linked_codes": ["8C00"],
+    "text": "Unilateral facial weakness that includes the forehead (inability to raise the eyebrow on the affected side) is consistent with a peripheral facial nerve palsy. If the forehead is spared and weakness is confined to the lower face, a central neurological cause should be considered instead and this guideline does not apply."
+  },
+  {
+    "id": "GDL-029",
+    "linked_codes": ["1A00"],
+    "text": "Profuse, painless, watery ('rice-water') diarrhoea causing rapid dehydration, especially in an outbreak or endemic setting, is characteristic of cholera and should be distinguished from typical gastroenteritis by the severity and rapidity of fluid loss."
+  },
+  {
+    "id": "GDL-030",
+    "linked_codes": ["1A07"],
+    "text": "A sustained, stepwise-rising fever over several days with relative bradycardia (pulse rate lower than expected for the degree of fever) and abdominal symptoms is a recognized pattern for typhoid fever."
+  }
+]

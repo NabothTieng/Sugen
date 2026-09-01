@@ -1,0 +1,52 @@
+[
+ {
+  "id": "P-01",
+  "note": "Sudden severe pain and swelling of the right big toe joint overnight, cannot bear the bedsheet touching it.",
+  "expected": "FB32"
+ },
+ {
+  "id": "P-02",
+  "note": "Left calf swollen, warm and tender after a 14-hour bus journey from Mombasa, pain on dorsiflexion.",
+  "expected": "BD10"
+ },
+ {
+  "id": "P-03",
+  "note": "Child, 3, barking cough with noisy breathing at night, hoarse voice, low-grade fever.",
+  "expected": "CA22"
+ },
+ {
+  "id": "P-04",
+  "note": "Profuse painless watery diarrhoea like rice water since this morning, already weak and sunken eyes, others in the village affected.",
+  "expected": "1A00"
+ },
+ {
+  "id": "P-05",
+  "note": "Periumbilical pain that moved to the right lower quadrant, fever, guarding and rebound tenderness.",
+  "expected": "DB90"
+ },
+ {
+  "id": "P-06",
+  "note": "Severe right eye pain with blurred vision and haloes around lights since evening, eye red and hard, vomiting.",
+  "expected": "9A02"
+ },
+ {
+  "id": "P-07",
+  "note": "Sudden worst-headache-of-life while lifting water jerrican, onset in seconds, neck stiff, photophobia.",
+  "expected": "8A80"
+ },
+ {
+  "id": "P-08",
+  "note": "High fever, retro-orbital pain, severe muscle and joint aches, fine rash, returned from coastal region last week.",
+  "expected": "1F03"
+ },
+ {
+  "id": "P-09",
+  "note": "Right facial droop since morning sparing the forehead, able to raise both eyebrows, mild arm weakness on same side.",
+  "expected": "8C00"
+ },
+ {
+  "id": "P-10",
+  "note": "Progressive fatigue and pallor, spoon-shaped nails, craving for eating soil, low haemoglobin with low ferritin.",
+  "expected": "3A20"
+ }
+]

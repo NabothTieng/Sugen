@@ -1,0 +1,8 @@
+# Progress Log
+
+- 2026-09-01T00:00:00Z Reviewed brief: 3-call-per-episode budget, offline replay requirement, prompt-injection test embedded in EP-03, 280-code catalog too large to send whole to the LLM every call.
+- 2026-09-01T00:05:00Z Decided architecture: local pure-python TF-IDF retrieval (no embedding API spend) to shortlist ~15 codes / ~8 guidelines per episode, then 3 LLM calls (synthesis -> coding -> verification).
+- 2026-09-01T00:10:00Z Chose google-genai SDK over google-generativeai after confirming the latter is deprecated (FutureWarning on import) as of this session.
+- 2026-09-01T00:15:00Z Smoke-tested retrieval against all 6 episodes.json cases with no LLM calls (pure data-loading + TF-IDF), to catch structural bugs before spending any API quota.
+- 2026-09-01T00:20:00Z Bug found: retrieval was one-directional — a guideline could be retrieved lexically without its linked ICD code appearing in the candidate list (EP-04: pre-eclampsia guideline GDL-009 retrieved, but code JA63 missing). Fixed with symmetric augmentation (guideline<->linked codes) in retrieve_candidates().
+- 2026-09-01T00:25:00Z Second gap found and NOT fully patched (documented instead): EP-06's note explicitly says "edges not raised or demarcated" to rule out erysipelas, but keyword TF-IDF has no negation handling, so "raised" still boosts the erysipelas code (1C61) while the correct code (1C60, cellulitis) doesn't reliably surface. Mitigation: call2 prompt explicitly permits picking a code outside the shortlist when confident, and call3 verification is designed to catch this class of error against the guideline text. Logged as a known limitation for AI_WORKFLOW.md / REFLECTION.md and as a target for one of the 5 custom eval cases.
