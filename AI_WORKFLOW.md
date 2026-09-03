@@ -69,7 +69,12 @@ undermined the point of having them at all:
   level isn't "confirmed," or — hard floor to `"low"` — when the independent,
   non-LLM `verify_quotes()` check catches a hallucinated quote. The model's own label
   is kept alongside as `model_reported_confidence` for comparison, but it does not get
-  to decide the number that actually ships.
+  to decide the number that actually ships. This isn't hypothetical: EP-01, once it
+  actually completed a live run, is a real instance of this firing — the model
+  self-reported `"high"`, but its own code's `confirmation_level` was `"probable"`
+  (Widal/blood culture still pending), and `calibrate_confidence()` correctly knocked
+  it down to `"medium"` on that basis alone, independent of and in addition to call 3's
+  own (clean) 5-check audit. See `EVAL_CASES.md`.
 - **Adjudicating label disagreements.** The brief is explicit that this is graded on
   judgment, not score: *"you are graded on your judgment about the labels, not on your
   score against them."* That is deliberately a human call, argued with evidence from
