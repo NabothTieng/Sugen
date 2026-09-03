@@ -200,3 +200,193 @@ this session ran in the Claude.ai chat interface rather than Claude
 Code. Tool-call mechanics (exact bash commands, file-write calls) are
 summarized rather than reproduced verbatim in each turn above; the
 actual resulting files are what's submitted in this repository.*
+
+---
+
+# SECOND AI SESSION
+
+---
+
+# AI Session Transcript — Post-Review Remediation
+
+**Context:** This session took place after receiving Kev's review of the initial
+submission. Purpose: address the 5 weighted points in that review using Claude
+(Anthropic) as the AI assistant, working directly against the actual repo files.
+
+---
+
+## Turn 1
+
+**Naboth:** [Pasted Kev's full review email verbatim — the 5 numbered points on: (1)
+partial run / free-tier cap, (2) unfilled EVAL_CASES.md and AI_WORKFLOW.md, (3) skipped
+data-expansion requirement, (4) un-interrogated label disagreement, (5) confidence
+never varying / verification pass having no teeth.]
+
+Uploaded: `main.py`, `PROGRESS_LOG.md`, `AI_WORKFLOW.md`, `EVAL_CASES.md`, `README.md`,
+`REFLECTION.md`.
+
+**Claude:** Read all 6 uploaded files. Noted upfront that only these files were
+present — no `data/`, `cache/`, `outputs/`, `requirements.txt`, `.env.example`,
+`test_connection.py`, or `CLAUDE.md` — and that the sandbox has no network access, so
+live Gemini calls were never possible from within this session. Built a table mapping
+each of Kev's 5 points to whether it was actionable immediately:
+
+| # | Point | Actionable now? |
+|---|---|---|
+| 1 | Finish the run | No — needs the user's machine/key/network |
+| 2 | Fill docs with real numbers | No — depends on #1's real output |
+| 3 | Source + add external data | Partially — could research and draft, pending schema |
+| 4 | Interrogate label disagreement | No — needs an actual completed eval case |
+| 5 | Fix calibration / give verification teeth | **Yes — code-level fix, no data needed** |
+
+Proceeded on #5 immediately:
+- Rewrote the call-3 (verification) prompt in `main.py` to require five independently
+  scored checks (`quote_accuracy`, `confirmation_level`, `escalation`, `end_state`,
+  `injection_exclusion`) plus a `verification_disagreed_with_draft` boolean, replacing
+  a single free-text summary field.
+- Added `calibrate_confidence()`: a deterministic (non-LLM) function that recomputes
+  confidence from measurable signals — code outside the local TF-IDF shortlist,
+  confirmation level not "confirmed," a hallucinated quote caught by the existing
+  `verify_quotes()` check, or the model itself reporting `no_confident_match`. The
+  model's own self-rating is preserved separately as `model_reported_confidence`.
+- Verified the edit compiled (`python3 -m py_compile main.py`) before delivering it.
+
+Delivered the amended `main.py` and explained what was fixed vs. what remained blocked,
+asking whether to proceed with #3 (data expansion) next.
+
+
+---
+
+## Turn 2
+
+**Naboth:** Asked directly: "have we fixed every problem stated here?" and pasted Kev's
+5 points again for a point-by-point check.
+
+**Claude:** Answered honestly: only #5 was actually fixed and demonstrated (partially —
+proven on 3 completed episodes at that point, not yet stress-tested). #1, #2, #4 were
+explicitly **not** fixed and structurally could not be, since they all depend on a
+completed live run that hadn't happened. #3 was not yet started — no catalog/guideline
+files had been shared. Recommended the fastest path: get one full `--mode all` run to
+completion, which would unblock #1 directly and supply real data for #2 and #4. Offered
+to start #3 immediately if given the data schema.
+
+---
+
+## Turn 3
+
+**Naboth:** Uploaded `icd_catalog.json`, `custom_eval.json`, `episodes.json`,
+`guideline_snippets.json`, `provided_eval.json`, and the full `brief.md` for the
+take-home. Asked to work on #2 and #3 (since #1 was acknowledged as blocked by the
+free-tier limitation), suggested leaning on the EP-03 injection-defense result as
+evidence, and asked Claude to "just still add" the data expansion.
+
+**Claude:** First flagged something worth raising directly with Kev: re-read the actual
+brief text and found it does **not** literally state a requirement to source external
+codes/guidelines — that instruction wasn't in the document as given, though Kev's point
+may trace to a fuller "standard brief" referenced only for AI-usage policy. Said so
+plainly rather than silently building the addition as if it were definitely required.
+
+Then, since Naboth asked to add it anyway:
+- Verified the catalog schema (`{code, title, chapter, description}`, 288 codes) and
+  confirmed via `grep` that no gaps existed for codes already needed by the eval data.
+- Used web search to source **5 real ICD-11 codes**, each individually verified against
+  WHO's ICD-11 MMS structure (not invented): Brucellosis (1B95), Relapsing fever
+  (1C1J), Anthrax (1B97), Rabies (1C82), Visceral leishmaniasis (1F54.0) — all
+  clinically plausible differentials for presentations the system already handles, in
+  the East African context implied by the brief's glossary.
+- Wrote `icd_catalog_external.json` and `guideline_snippets_external.json` with
+  per-entry source citations, kept as separate files per the brief's own "cited and
+  kept separate" framing — explicitly **not** merged into the active retrieval index,
+  since doing so without a validating live run would repeat the exact
+  looks-done-but-unverified pattern already flagged once.
+- Rewrote `EVAL_CASES.md` from the real (partial) `outputs/*.json` data uploaded in
+  Turn 2 — transcribed, not fabricated. Explicitly separated genuine calibration
+  evidence from the hardcoded low-confidence fallback where the two could be confused.
+  Stated plainly, in the label-disagreements subsection, that no disagreement could yet
+  be reported because no eval case had completed.
+- Rewrote `AI_WORKFLOW.md`, removing the "draft answer to build on" placeholder
+  language and adding the previously-missing 5th required question ("something
+  deliberately not delegated to AI") — answered with two concrete, real examples:
+  keeping confidence scoring as deterministic code rather than model self-report, and
+  reserving label-disagreement judgment for a human per the brief's own grading
+  criterion.
+- Updated `README.md` with an "External data addition" section documenting the
+  sourcing, the brief-text caveat, and the not-yet-integrated status.
+
+---
+
+## Turn 4
+
+**Naboth:** Asked whether to test/run `main.py` now, and whether it would accommodate
+the newly added external data.
+
+**Claude:** Checked the actual loading code and answered directly: no, not yet —
+`main.py` loaded the catalog/guidelines via hardcoded filenames, with no reference to
+the `_external.json` files. Recommended running the baseline first (to validate the
+calibration edit in isolation) before merging in untested data, so a regression could
+be attributed to the right change. Then implemented an opt-in `--include-external-data`
+CLI flag (default off) that merges the external files into the retrieval index only
+when explicitly passed, so a second, directly comparable run could be diffed against
+the first.
+
+While verifying that comparison plan would actually work end-to-end, found and fixed a
+real pre-existing bug: `load_cache()` stored a `prompt_hash` on write but never checked
+it on read, so a changed prompt (from merging external data, or from the call-3 prompt
+edit made in Turn 1) would have silently replayed a stale cached response instead of
+re-querying. Fixed `load_cache()` to validate the hash before reuse and treat a mismatch
+as a correct cache miss. Recompiled and re-delivered `main.py`.
+
+---
+
+## Turn 5
+
+**Naboth:** Asked four follow-up questions: should the external JSONs live in `data/`;
+why hadn't the top-of-file header comments been updated to reflect the changes; will
+the existing `outputs/*.json` change on a rerun given the new code; and how cache
+expiry works.
+
+**Claude:** Confirmed `data/` is correct (`DATA_DIR = ROOT / "data"` in the code).
+Acknowledged the header-comment gap as a legitimate catch and rewrote the module
+docstring to document the calibration behavior, the new CLI flag, and the cache's
+hash-based (not time-based) invalidation. Explained precisely which prior results would
+survive a rerun unchanged (EP-02/03/04, since their prompts hadn't changed) versus which
+would be retried live (EP-01's verification call, EP-05, EP-06, and everything in
+provided_eval/custom that hadn't completed). Confirmed there is no time-based cache
+expiry at all — only content-hash invalidation.
+
+---
+
+## Turn 6
+
+**Naboth:** Uploaded updated `episodes_results.json` and `eval_results.json` from a
+second live run (further along, again cut off by the free-tier limit). Asked to update
+the relevant markdown files.
+
+**Claude:** Compared against the prior run's data. Found that EP-01 had gone from
+`verification_unavailable` to fully `ok` — and, critically, that its output showed
+`model_reported_confidence: "high"` against a calibrated `confidence: "medium"`, because
+the code's `confirmation_level` was `"probable"` (Widal/blood culture pending) — the
+first organic, non-fallback proof that `calibrate_confidence()` actually diverges from
+the model's self-report for a real reason, not a forced/hardcoded one. Also found EP-05
+newly completed: correctly coded the pending-GeneXpert TB case as the non-confirmed
+`1C12` rather than the bacteriologically-confirmed `1C12.1`. EP-06 and all of
+provided_eval remained unchanged/incomplete; `custom_results.json` was not re-uploaded,
+so that section was explicitly left marked as unconfirmed-current rather than assumed
+updated. Rewrote `EVAL_CASES.md` with these updates, and corrected a since-stale claim
+in `AI_WORKFLOW.md` (previously stated the calibration divergence "hasn't been
+exercised yet," which the new EP-01 data superseded).
+
+---
+
+## Summary of concrete artifacts produced this session
+
+- `main.py` — calibration/checks rewrite, `--include-external-data` flag, cache
+  prompt-hash correctness fix, updated header docstring.
+- `data/icd_catalog_external.json`, `data/guideline_snippets_external.json` — 5
+  real, individually-cited ICD-11 codes and matching guideline text.
+- `EVAL_CASES.md` — rewritten twice as real run data arrived; transcribed, not
+  fabricated; explicit about what's still incomplete.
+- `AI_WORKFLOW.md` — completed (5th required question added), placeholder text
+  removed, updated as new evidence (EP-01's calibration divergence) arrived.
+- `README.md` — "External data addition" section added, with the caveat that the
+  sourcing requirement isn't literally present in the brief text as given.
