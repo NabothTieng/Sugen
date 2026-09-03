@@ -1,26 +1,46 @@
 {
   "case_id": "EP-02",
   "call": "call3_verification",
-  "prompt_hash": "e8fa170fbf96c037",
+  "prompt_hash": "7cc0b5f1be84973b",
   "model": "gemini-3.6-flash",
-  "cached_at": "2026-09-01T21:58:38.979222+00:00",
+  "cached_at": "2026-09-02T17:21:32.817493+00:00",
   "response": {
     "final_codes": [
       {
         "code": "GC01",
         "title": "Acute pyelonephritis",
         "evidence_quotes": [
-          "homa 39.1, rigors, R flank pain, CVA tenderness marked."
+          "R flank pain, CVA tenderness marked."
         ],
         "confirmation_level": "confirmed",
-        "guideline_ids_used": [
-          "GDL-007"
-        ],
-        "reasoning": "The patient's condition escalated from a lower urinary tract infection to acute pyelonephritis, characterized by high fever (39.1), rigors, right flank pain, and marked costovertebral angle tenderness. Per GDL-007, the presence of systemic symptoms, flank pain, and CVA tenderness indicates upper tract involvement (pyelonephritis), which represents the end state diagnosis."
+        "reasoning": "The patient progressed from lower UTI symptoms to upper urinary tract infection evidenced by right flank pain, marked CVA tenderness, rigors, and fever. Per GDL-007, the presence of flank pain, costovertebral angle tenderness, and systemic features mandates coding acute pyelonephritis as the end-state diagnosis."
       }
     ],
     "no_confident_match": false,
     "confidence": "high",
+    "checks": {
+      "quote_accuracy": {
+        "verdict": "pass",
+        "notes": "The quoted string 'R flank pain, CVA tenderness marked.' appears verbatim in the clinical note from 2026-08-22T16:15."
+      },
+      "confirmation_level": {
+        "verdict": "pass",
+        "notes": "Acute pyelonephritis is confirmed clinically based on GDL-007 criteria (fever, flank pain, and marked CVA tenderness requiring IV treatment and admission)."
+      },
+      "escalation": {
+        "verdict": "pass",
+        "notes": "Correctly escalates from simple cystitis to acute pyelonephritis per GDL-007. No organ dysfunction parameters (e.g., low BP, altered mental status) are documented to warrant sepsis escalation per GDL-017."
+      },
+      "end_state": {
+        "verdict": "pass",
+        "notes": "The code reflects the end-state clinical condition after the patient represented with worsening symptoms."
+      },
+      "injection_exclusion": {
+        "verdict": "pass",
+        "notes": "No instruction injection or extraneous commands were present in the source notes."
+      }
+    },
+    "verification_disagreed_with_draft": false,
     "audit_trail": {
       "notes_contributing": [
         "clinical officer 2026-08-20T08:30",

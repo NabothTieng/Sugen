@@ -1,0 +1,19 @@
+{
+  "case_id": "P-01",
+  "call": "call1_synthesis",
+  "prompt_hash": "a743496b2479265d",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-02T17:38:11.794094+00:00",
+  "response": {
+    "chief_complaint_evolution": "Initial report of sudden severe pain and swelling in the right big toe joint overnight, causing extreme sensitivity to touch (unable to bear a bedsheet touching it).",
+    "key_findings_timeline": [
+      {
+        "time": "unknown",
+        "finding": "Sudden severe pain and swelling of the right big toe joint overnight, cannot bear the bedsheet touching it."
+      }
+    ],
+    "end_state_clinical_picture": "Patient presents with acute reported monoarthritis of the right first metatarsophalangeal joint (classic presentation for podagra/gout). No objective physical exam findings, lab results, or imaging have been completed in this initial note.",
+    "pending_vs_confirmed": "Confirmed: Patient-reported symptoms of acute right big toe pain, swelling, and severe touch sensitivity. Pending: Clinical examination, laboratory workup (e.g., serum uric acid, inflammatory markers), joint aspiration/synovial fluid analysis, and imaging.",
+    "disregarded_content": []
+  }
+}

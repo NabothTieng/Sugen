@@ -1,0 +1,37 @@
+[
+  {
+    "code": "1B95",
+    "title": "Brucellosis",
+    "chapter": "Infectious diseases",
+    "description": "Zoonotic Brucella infection from unpasteurised dairy or livestock contact; undulant/relapsing fever, drenching sweats, back pain, arthralgia — often mimics typhoid.",
+    "source": "WHO ICD-11 MMS, block 'Certain zoonotic bacterial diseases' (1B95 Brucellosis). https://icd.who.int/browse11 — verified via https://www.findacode.com/icd-11/code-730510331.html"
+  },
+  {
+    "code": "1C1J",
+    "title": "Relapsing fever",
+    "chapter": "Infectious diseases",
+    "description": "Borrelia infection transmitted by ticks or lice; recurring febrile episodes separated by afebrile intervals, headache, myalgia — a real differential for cyclical-fever presentations otherwise defaulted to malaria.",
+    "source": "WHO ICD-11 MMS (1C1J Relapsing fever), listed under 'Certain zoonotic bacterial diseases' block. https://icd.who.int/browse11"
+  },
+  {
+    "code": "1B97",
+    "title": "Anthrax",
+    "chapter": "Infectious diseases",
+    "description": "Bacillus anthracis infection via inhalation, ingestion, or cutaneous contact with infected livestock/hides; cutaneous form presents as a painless black-eschar lesion, distinct from ordinary cellulitis.",
+    "source": "WHO ICD-11 MMS (1B97 Anthrax). https://icd.who.int/browse11 — verified via https://www.findacode.com/icd-11/code-1321303663.html"
+  },
+  {
+    "code": "1C82",
+    "title": "Rabies",
+    "chapter": "Infectious diseases",
+    "description": "Rabies virus infection following an animal bite/scratch (commonly dog); prodromal fever and headache progressing to hydrophobia, agitation, or paralysis — a time-critical exposure history to screen for.",
+    "source": "WHO ICD-11 MMS (1C82 Rabies). https://icd.who.int/browse11 — verified via https://www.findacode.com/icd-11/code-854762584.html"
+  },
+  {
+    "code": "1F54.0",
+    "title": "Visceral leishmaniasis",
+    "chapter": "Infectious diseases",
+    "description": "Leishmania donovani infection transmitted by sandfly bite; prolonged biphasic fever, weight loss, pancytopenia, and marked hepatosplenomegaly — a differential for prolonged undifferentiated fever alongside typhoid and TB.",
+    "source": "WHO ICD-11 MMS (1F54.0 Visceral leishmaniasis, under 1F54 Leishmaniasis). https://icd.who.int/browse11"
+  }
+]

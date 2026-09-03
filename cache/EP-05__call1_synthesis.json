@@ -3,21 +3,21 @@
   "call": "call1_synthesis",
   "prompt_hash": "af559fb02a5113c2",
   "model": "gemini-3.6-flash",
-  "cached_at": "2026-09-01T21:59:19.030079+00:00",
+  "cached_at": "2026-09-03T00:10:19.272814+00:00",
   "response": {
-    "chief_complaint_evolution": "Initial presentation of a 3-week cough ('kikohozi') unresponsive to amoxicillin, accompanied by night sweats, a 2 kg weight loss, and hemoptysis (streaks of blood) reported yesterday.",
+    "chief_complaint_evolution": "Initially presented by mother with a 3-week cough unresponsive to amoxicillin, accompanied by night sweats, 2 kg weight loss, hemoptysis (blood-streaked sputum), and a history of household TB exposure. In the subsequent note, the patient was initiated on supportive care while diagnostic confirmation for TB was requested.",
     "key_findings_timeline": [
       {
         "time": "2026-08-18T10:15",
-        "finding": "kikohozi x3 wks, not improving on amoxil. night sweats, wt loss 2kg (mother says clothes loose). yesterday coughed streaks of blood. father had 'chest problem' treated 6 months in 2024"
+        "finding": "kikohozi x3 wks, not improving on amoxil; night sweats; wt loss 2kg (mother says clothes loose); yesterday coughed streaks of blood; father had 'chest problem' treated 6 months in 2024"
       },
       {
         "time": "2026-08-18T11:00",
-        "finding": "sputum sent for genexpert - result awaited. started on supportive tx pending result."
+        "finding": "sputum sent for GeneXpert - result awaited; started on supportive tx pending result; NOT starting anti-TB until confirmation per program guidelines"
       }
     ],
-    "end_state_clinical_picture": "High clinical suspicion for pulmonary tuberculosis based on chronic cough, night sweats, weight loss, hemoptysis, failure to respond to amoxicillin, and household TB exposure history. Patient is currently on supportive care, with anti-TB treatment withheld pending lab confirmation.",
-    "pending_vs_confirmed": "Pending: Sputum GeneXpert result. Confirmed/Reported clinical findings: 3-week cough, 2 kg weight loss, night sweats, hemoptysis, lack of improvement on amoxicillin, and father's history of 6-month chest treatment.",
+    "end_state_clinical_picture": "High clinical suspicion for pulmonary tuberculosis based on chronic cough, weight loss, night sweats, hemoptysis, and close contact with a treated chest case. Patient is receiving supportive treatment while awaiting definitive laboratory confirmation before anti-TB therapy is initiated.",
+    "pending_vs_confirmed": "Pending: GeneXpert sputum test result. Confirmed: None (TB is unconfirmed; amoxicillin non-responsiveness and clinical signs confirmed by history, but microbiological diagnosis is pending).",
     "disregarded_content": []
   }
 }

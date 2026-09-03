@@ -3,9 +3,9 @@
   "call": "call1_synthesis",
   "prompt_hash": "c58f0ce2f0db2151",
   "model": "gemini-3.6-flash",
-  "cached_at": "2026-09-01T21:58:24.076316+00:00",
+  "cached_at": "2026-09-02T17:18:56.167172+00:00",
   "response": {
-    "chief_complaint_evolution": "Initially presented with lower urinary tract symptoms (dysuria x2 days, frequency, urgency, suprapubic discomfort) without fever or flank pain. Two days later, deteriorated with severe systemic and upper urinary tract symptoms including fever (39.1), rigors, right flank pain, and vomiting.",
+    "chief_complaint_evolution": "Initially presented on 2026-08-20 with dysuria (burning on passing urine x2 days), frequency, urgency, and suprapubic discomfort without systemic symptoms. Worsened by 2026-08-22, developing systemic and upper urinary tract infection symptoms including rigors, vomiting (x2), high fever, and right flank pain.",
     "key_findings_timeline": [
       {
         "time": "2026-08-20T08:30",
@@ -16,8 +16,8 @@
         "finding": "homa 39.1, rigors, R flank pain, CVA tenderness marked. vomitted x2"
       }
     ],
-    "end_state_clinical_picture": "Patient has progressed from a lower UTI to acute pyelonephritis/severe UTI with systemic involvement (fever 39.1, rigors, vomiting, marked CVA tenderness) requiring inpatient admission, IV fluids, and IV antibiotic escalation.",
-    "pending_vs_confirmed": "Confirmed: Positive urine dipstick (leukocytes+, nitrites+), clinical signs of acute pyelonephritis (fever, marked CVA tenderness, right flank pain, vomiting). Pending: No additional formal laboratory or culture results are explicitly noted as pending in the record.",
+    "end_state_clinical_picture": "The clinical picture as of the final note indicates progression from an uncomplicated lower UTI to acute pyelonephritis (complicated upper UTI) with systemic toxicity (fever 39.1, rigors, vomiting, marked right CVA tenderness). Lower UTI unresponsive to initial oral antibiotics; admitted for IV fluids and IV antibiotics.",
+    "pending_vs_confirmed": "Confirmed: Urinalysis dipstick positive for leukocytes and nitrites (2026-08-20); clinical pyelonephritis with right CVA tenderness and fever (2026-08-22). Pending: Urine culture/sensitivity testing and formal blood work/imaging (not documented in notes).",
     "disregarded_content": []
   }
 }

@@ -1,118 +1,43 @@
 [
   {
     "episode_id": "P-01",
-    "status": "system_unavailable",
-    "stage_failed": "call1_synthesis",
+    "status": "system_degraded",
+    "stage_failed": "call2_coding",
     "final_codes": [],
     "no_confident_match": true,
-    "note": "LLM unreachable during synthesis; episode requires manual review.",
+    "synthesis": {
+      "chief_complaint_evolution": "Initial report of sudden severe pain and swelling in the right big toe joint overnight, causing extreme sensitivity to touch (unable to bear a bedsheet touching it).",
+      "key_findings_timeline": [
+        {
+          "time": "unknown",
+          "finding": "Sudden severe pain and swelling of the right big toe joint overnight, cannot bear the bedsheet touching it."
+        }
+      ],
+      "end_state_clinical_picture": "Patient presents with acute reported monoarthritis of the right first metatarsophalangeal joint (classic presentation for podagra/gout). No objective physical exam findings, lab results, or imaging have been completed in this initial note.",
+      "pending_vs_confirmed": "Confirmed: Patient-reported symptoms of acute right big toe pain, swelling, and severe touch sensitivity. Pending: Clinical examination, laboratory workup (e.g., serum uric acid, inflammatory markers), joint aspiration/synovial fluid analysis, and imaging.",
+      "disregarded_content": []
+    },
+    "note": "LLM unreachable during coding step; synthesis completed but no code decision made. Flag for manual review.",
     "expected": "FB32",
     "match": false
   },
   {
     "episode_id": "P-02",
-    "status": "ok",
-    "final_codes": [
-      {
-        "code": "BD10",
-        "title": "Deep vein thrombosis",
-        "evidence_quotes": [
-          "Left calf swollen, warm and tender after a 14-hour bus journey from Mombasa, pain on dorsiflexion."
-        ],
-        "confirmation_level": "suspected/pending",
-        "reasoning": "The patient presents with classic signs of deep vein thrombosis (unilateral calf swelling, warmth, tenderness, and pain on dorsiflexion) following prolonged immobility (14-hour bus journey). Per GDL-021, this pattern strongly points to suspected deep vein thrombosis."
-      }
-    ],
-    "no_confident_match": false,
-    "confidence": "high",
-    "audit_trail": {
-      "notes_contributing": [
-        "encounter note"
-      ],
-      "disregarded": [],
-      "changes_from_draft": "none"
-    },
-    "quote_verification_warnings": [],
-    "candidate_codes_considered": [
-      "BD10",
-      "1C60",
-      "DB56",
-      "ND56",
-      "3B20",
-      "MG26",
-      "FA20.1",
-      "GA30",
-      "1C12.1",
-      "JA00",
-      "BB40",
-      "2F9Z",
-      "GA34",
-      "GC01",
-      "MG30",
-      "DB90",
-      "DA92",
-      "BA41",
-      "BA40",
-      "FB32",
-      "FA20",
-      "JB00",
-      "GC08"
-    ],
+    "status": "system_unavailable",
+    "stage_failed": "call1_synthesis",
+    "final_codes": [],
+    "no_confident_match": true,
+    "note": "LLM unreachable during synthesis; episode requires manual review.",
     "expected": "BD10",
-    "match": true
+    "match": false
   },
   {
     "episode_id": "P-03",
-    "status": "ok",
-    "final_codes": [
-      {
-        "code": "CA20",
-        "title": "Croup (acute laryngotracheobronchitis)",
-        "evidence_quotes": [
-          "barking cough",
-          "noisy breathing at night",
-          "hoarse voice",
-          "low-grade fever"
-        ],
-        "confirmation_level": "probable",
-        "reasoning": "The 3-year-old child presents with the classic symptom cluster of croup, including a characteristic barking cough, nocturnal noisy breathing, hoarse voice, and low-grade fever."
-      }
-    ],
-    "no_confident_match": false,
-    "confidence": "high",
-    "audit_trail": {
-      "notes_contributing": [
-        "reported clinical presentation"
-      ],
-      "disregarded": [],
-      "changes_from_draft": "none"
-    },
-    "quote_verification_warnings": [],
-    "candidate_codes_considered": [
-      "CA20",
-      "CA07",
-      "JA00",
-      "MG26",
-      "2F9Z",
-      "5A2Y",
-      "1C12.1",
-      "MG30",
-      "1C12",
-      "1E90",
-      "FA80",
-      "CA22",
-      "MB21",
-      "1A07",
-      "1E32",
-      "1D91",
-      "CA23",
-      "3B63",
-      "DB90",
-      "DA92",
-      "1F40",
-      "8B00",
-      "8B20"
-    ],
+    "status": "system_unavailable",
+    "stage_failed": "call1_synthesis",
+    "final_codes": [],
+    "no_confident_match": true,
+    "note": "LLM unreachable during synthesis; episode requires manual review.",
     "expected": "CA22",
     "match": false
   },
@@ -138,58 +63,13 @@
   },
   {
     "episode_id": "P-06",
-    "status": "verification_unavailable",
-    "final_codes": [
-      {
-        "code": "9A02",
-        "title": "Acute angle-closure glaucoma",
-        "evidence_quotes": [
-          "Severe right eye pain with blurred vision and haloes around lights since evening, eye red and hard, vomiting."
-        ],
-        "confirmation_level": "probable",
-        "guideline_ids_used": [
-          "GDL-023"
-        ],
-        "reasoning": "The patient presents with the classic triad and associated signs of acute angle-closure glaucoma, including severe unilateral eye pain, blurred vision with haloes around lights, a red and hard eye, and associated vomiting. Per GDL-023, this distinct clinical pattern warrants the diagnosis of acute angle-closure glaucoma."
-      }
-    ],
-    "no_confident_match": false,
-    "confidence": "low",
-    "audit_trail": {
-      "notes_contributing": [
-        "reported unknown"
-      ],
-      "disregarded": [],
-      "changes_from_draft": "N/A \u2014 verification step unreachable, draft used as-is with confidence downgraded to low"
-    },
-    "quote_verification_warnings": [],
-    "candidate_codes_considered": [
-      "9A02",
-      "9A01",
-      "9B57",
-      "MB21",
-      "9B60",
-      "9B10",
-      "9B70",
-      "DB90",
-      "1D80.1",
-      "JA40",
-      "FA80",
-      "9A76",
-      "MG26",
-      "9A40",
-      "JA00",
-      "DA92",
-      "DB80",
-      "DB30",
-      "JA63",
-      "8A80",
-      "8A81",
-      "FB32",
-      "NE60"
-    ],
+    "status": "system_unavailable",
+    "stage_failed": "call1_synthesis",
+    "final_codes": [],
+    "no_confident_match": true,
+    "note": "LLM unreachable during synthesis; episode requires manual review.",
     "expected": "9A02",
-    "match": true
+    "match": false
   },
   {
     "episode_id": "P-07",

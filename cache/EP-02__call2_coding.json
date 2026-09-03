@@ -1,22 +1,22 @@
 {
   "case_id": "EP-02",
   "call": "call2_coding",
-  "prompt_hash": "7f580c3034d0925c",
+  "prompt_hash": "f4b56fa98476b327",
   "model": "gemini-3.6-flash",
-  "cached_at": "2026-09-01T21:58:30.753106+00:00",
+  "cached_at": "2026-09-02T17:20:23.453702+00:00",
   "response": {
     "codes": [
       {
         "code": "GC01",
         "title": "Acute pyelonephritis",
         "evidence_quotes": [
-          "homa 39.1, rigors, R flank pain, CVA tenderness marked."
+          "R flank pain, CVA tenderness marked."
         ],
         "confirmation_level": "confirmed",
         "guideline_ids_used": [
           "GDL-007"
         ],
-        "reasoning": "The patient's clinical picture progressed from a lower UTI to acute pyelonephritis, evidenced by severe systemic and upper tract symptoms including fever (39.1), right flank pain, and marked costovertebral angle (CVA) tenderness. Per GDL-007, the presence of fever, flank pain, or CVA tenderness indicates the infection has ascended to the kidney and should be coded as pyelonephritis representing the end state of the episode."
+        "reasoning": "The patient progressed from lower UTI symptoms to upper urinary tract infection evidenced by right flank pain, marked CVA tenderness, rigors, and high fever. Per GDL-007, the presence of flank pain, costovertebral angle tenderness, and systemic features mandates coding acute pyelonephritis as the end-state diagnosis."
       }
     ],
     "confidence": "high",

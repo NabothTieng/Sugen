@@ -1,27 +1,50 @@
 {
   "case_id": "EP-04",
   "call": "call3_verification",
-  "prompt_hash": "da9cada2d5c2bea8",
+  "prompt_hash": "3a12ae62dcc6161b",
   "model": "gemini-3.6-flash",
-  "cached_at": "2026-09-01T21:59:13.658597+00:00",
+  "cached_at": "2026-09-02T17:30:20.043011+00:00",
   "response": {
     "final_codes": [
       {
         "code": "JA63",
         "title": "Pre-eclampsia",
         "evidence_quotes": [
-          "c/o headache x3 days + 'eyes flickering'.",
-          "BP 158/104.",
-          "urine protein 2+.",
+          "c/o headache x3 days + 'eyes flickering'",
+          "BP 158/104",
+          "urine protein 2+",
           "RUQ pain on deep palpation",
-          "BP repeat 154/102 after rest."
+          "BP repeat 154/102 after rest"
         ],
         "confirmation_level": "confirmed",
-        "reasoning": "The patient meets diagnostic criteria for pre-eclampsia beyond 20 weeks gestation, presenting with persistent severe hypertension, proteinuria (2+), visual symptoms, headache, and right upper quadrant abdominal tenderness. Per GDL-009, this presentation should be coded as pre-eclampsia rather than isolated headache or abdominal pain."
+        "reasoning": "The patient presented in ANC with elevated blood pressure (158/104, repeat 154/102), 2+ proteinuria, headache, visual disturbance, and right upper quadrant pain. Per GDL-009, this presentation in pregnancy meets criteria for pre-eclampsia and should not be coded as primary headache or abdominal pain."
       }
     ],
     "no_confident_match": false,
     "confidence": "high",
+    "checks": {
+      "quote_accuracy": {
+        "verdict": "pass",
+        "notes": "All evidence quotes appear verbatim in the original ANC nurse and clinical officer notes."
+      },
+      "confirmation_level": {
+        "verdict": "pass",
+        "notes": "Pre-eclampsia is confirmed by objective clinical signs (sustained severe-range BP elevation and 2+ proteinuria) along with classic symptoms in an ANC patient."
+      },
+      "escalation": {
+        "verdict": "pass",
+        "notes": "Per GDL-009, symptom combination (headache, visual disturbance, RUQ pain) with elevated BP and proteinuria in pregnancy is coded as pre-eclampsia rather than isolated primary headache or abdominal pain."
+      },
+      "end_state": {
+        "verdict": "pass",
+        "notes": "Reflects the final working diagnosis and referral condition for urgent obstetric care; malaria was ruled out (BS negative, normal temperature)."
+      },
+      "injection_exclusion": {
+        "verdict": "pass",
+        "notes": "No prompt injection attempts or system instructions were present in the clinical notes."
+      }
+    },
+    "verification_disagreed_with_draft": false,
     "audit_trail": {
       "notes_contributing": [
         "ANC nurse 2026-08-22T09:00",

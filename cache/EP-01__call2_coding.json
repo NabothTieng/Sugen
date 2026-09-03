@@ -1,23 +1,23 @@
 {
   "case_id": "EP-01",
   "call": "call2_coding",
-  "prompt_hash": "ddeaf78314f695ee",
+  "prompt_hash": "3093978a83d429aa",
   "model": "gemini-3.6-flash",
-  "cached_at": "2026-09-01T21:58:07.873945+00:00",
+  "cached_at": "2026-09-02T17:17:11.196266+00:00",
   "response": {
     "codes": [
       {
         "code": "1A07",
         "title": "Typhoid fever",
         "evidence_quotes": [
-          "fever persisting, now day 7. stepwise rise, temp 39.4 but pulse only 78. abd pain, constipated.",
-          "rose spots noted on trunk."
+          "fever persisting, now day 7. stepwise rise, temp 39.4 but pulse only 78. abd pain, constipated. repeat BS again negative. rose spots noted on trunk.",
+          "plan: start empiric tx, send widal/blood cx"
         ],
         "confirmation_level": "probable",
         "guideline_ids_used": [
           "GDL-030"
         ],
-        "reasoning": "The patient demonstrates classic signs of typhoid fever including a 7-day sustained stepwise fever, relative bradycardia (temp 39.4 with pulse 78), abdominal pain, constipation, and pathognomonic rose spots. Malaria was ruled out via repeat negative blood smears, and empiric treatment for typhoid fever was initiated while formal lab confirmation is pending."
+        "reasoning": "The end-state clinical assessment demonstrates a classic presentation of typhoid fever (stepwise high fever, relative bradycardia with temperature 39.4\u00b0C and pulse 78, abdominal pain, constipation, and characteristic rose spots on the trunk) following two negative malaria smears. Empiric treatment was initiated while confirmatory Widal and blood cultures remain pending."
       }
     ],
     "confidence": "high",

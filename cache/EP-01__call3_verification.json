@@ -1,27 +1,47 @@
 {
   "case_id": "EP-01",
   "call": "call3_verification",
-  "prompt_hash": "1b48d38a06d665b3",
+  "prompt_hash": "998c05c121ed8657",
   "model": "gemini-3.6-flash",
-  "cached_at": "2026-09-01T21:58:15.825566+00:00",
+  "cached_at": "2026-09-03T00:09:58.613416+00:00",
   "response": {
     "final_codes": [
       {
         "code": "1A07",
         "title": "Typhoid fever",
         "evidence_quotes": [
-          "fever persisting, now day 7. stepwise rise, temp 39.4 but pulse only 78. abd pain, constipated.",
-          "rose spots noted on trunk."
+          "fever persisting, now day 7. stepwise rise, temp 39.4 but pulse only 78. abd pain, constipated. repeat BS again negative. rose spots noted on trunk.",
+          "plan: start empiric tx, send widal/blood cx"
         ],
         "confirmation_level": "probable",
-        "guideline_ids_used": [
-          "GDL-030"
-        ],
-        "reasoning": "The patient demonstrates classic signs of typhoid fever including a 7-day sustained stepwise fever, relative bradycardia (temp 39.4 with pulse 78), abdominal pain, constipation, and pathognomonic rose spots. Malaria was ruled out via repeat negative blood smears, and empiric treatment for typhoid fever was initiated while formal lab confirmation is pending."
+        "reasoning": "The end-state clinical assessment demonstrates a classic presentation of typhoid fever (stepwise high fever, relative bradycardia with temperature 39.4\u00b0C and pulse 78, abdominal pain, constipation, and characteristic rose spots on the trunk) following two negative malaria smears. Empiric treatment was initiated while confirmatory Widal and blood cultures remain pending."
       }
     ],
     "no_confident_match": false,
     "confidence": "high",
+    "checks": {
+      "quote_accuracy": {
+        "verdict": "pass",
+        "notes": "All evidence quotes appear verbatim in the original clinical notes."
+      },
+      "confirmation_level": {
+        "verdict": "pass",
+        "notes": "The confirmation level 'probable' is correct as blood cultures and Widal tests remain pending while empiric treatment is initiated."
+      },
+      "escalation": {
+        "verdict": "pass",
+        "notes": "Code selection follows GDL-030 correctly. No red flags for sepsis (pulse is 78) or other emergency conditions are present."
+      },
+      "end_state": {
+        "verdict": "pass",
+        "notes": "The draft correctly reflects the end-state clinical assessment after initial suspicion of malaria was ruled out by two negative smears."
+      },
+      "injection_exclusion": {
+        "verdict": "pass",
+        "notes": "No prompt injection or adversarial text was present in the clinical notes."
+      }
+    },
+    "verification_disagreed_with_draft": false,
     "audit_trail": {
       "notes_contributing": [
         "triage nurse 2026-08-19T09:10",

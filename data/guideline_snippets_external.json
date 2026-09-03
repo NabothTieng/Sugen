@@ -1,0 +1,32 @@
+[
+  {
+    "id": "GDL-EXT-01",
+    "linked_codes": ["1B95", "1A07"],
+    "text": "Prolonged undulant fever with drenching sweats, back/joint pain, and a history of unpasteurised milk, raw dairy, or livestock/abattoir contact should prompt consideration of brucellosis, not only typhoid — the two overlap heavily on fever pattern alone and are distinguished mainly by exposure history, since brucellosis lacks the rose spots and relative bradycardia more typical of typhoid.",
+    "source": "Clinical pattern summarised from WHO ICD-11 zoonotic bacterial disease grouping and standard brucellosis case-definition literature (e.g. undulant/Malta fever presentation); not a verbatim guideline quote."
+  },
+  {
+    "id": "GDL-EXT-02",
+    "linked_codes": ["1C1J", "1F40"],
+    "text": "Fever with a genuinely cyclical, relapsing pattern (distinct afebrile intervals between febrile episodes, as opposed to the sustained stepwise rise of typhoid or the classic tertian/quartan periodicity of malaria) — especially with a tick or louse exposure history and a negative blood smear — should raise relapsing fever as a differential, not just a 'malaria ruled out, cause unclear' default.",
+    "source": "Clinical pattern summarised from Borrelia relapsing-fever case descriptions; not a verbatim guideline quote."
+  },
+  {
+    "id": "GDL-EXT-03",
+    "linked_codes": ["1B97", "1C60"],
+    "text": "A painless, black-centred (eschar) skin lesion with surrounding oedema, in a patient with livestock, hide, or wool exposure, is not ordinary cellulitis — cutaneous anthrax classically lacks the tenderness typical of bacterial cellulitis and requires a different exposure-driven workup.",
+    "source": "Clinical pattern summarised from cutaneous anthrax case descriptions; not a verbatim guideline quote."
+  },
+  {
+    "id": "GDL-EXT-04",
+    "linked_codes": ["1C82", "1C80"],
+    "text": "Any animal bite or scratch (particularly from a dog, bat, or other mammal in an endemic area) with a subsequent prodrome of fever, headache, and local paraesthesia at the bite site, progressing to agitation, hydrophobia, or ascending paralysis, should prompt urgent rabies risk assessment and post-exposure prophylaxis review — this is a distinct exposure-driven emergency, not a routine tetanus-prophylaxis wound note.",
+    "source": "Clinical pattern summarised from WHO rabies clinical-course guidance; not a verbatim guideline quote."
+  },
+  {
+    "id": "GDL-EXT-05",
+    "linked_codes": ["1F54.0", "1C12", "1A07"],
+    "text": "Prolonged fever with marked hepatosplenomegaly, weight loss, and pancytopenia on labs — especially with sandfly-endemic-area residence — should prompt visceral leishmaniasis as a differential alongside TB and typhoid; splenomegaly out of proportion to the other two is the more distinguishing feature to look for.",
+    "source": "Clinical pattern summarised from visceral leishmaniasis (kala-azar) case descriptions; not a verbatim guideline quote."
+  }
+]

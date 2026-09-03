@@ -207,13 +207,40 @@ report against cases that actually completed (e.g. "2/3 correct among
 completed cases; 7/10 did not run due to rate limiting") rather than
 scoring incomplete cases as failures — those are two different things.
 
+## External data addition (sourced, cited, kept separate)
+
+Note on scope: the brief text as given to me does not explicitly instruct sourcing
+external codes/guidelines — that requirement was raised in review, possibly inherited
+from a fuller "standard brief" this one references only for AI-usage policy. Flagging
+that distinction rather than silently assuming it either way; worth a direct question
+if it matters for grading.
+
+Regardless, added five real ICD-11 codes not present in the provided 288-code catalog,
+each verified against the WHO ICD-11 MMS structure (not invented): brucellosis (1B95),
+relapsing fever (1C1J), anthrax (1B97), rabies (1C82), and visceral leishmaniasis
+(1F54.0) — all real differentials for the fever/skin/animal-exposure presentations this
+system already handles, and all plausible in the East African clinical context implied
+by the glossary. Sources cited per-entry in `data/icd_catalog_external.json`.
+
+`data/icd_catalog_external.json` and `data/guideline_snippets_external.json` hold this
+addition. **Deliberately not merged into `icd_catalog.json` / `guideline_snippets.json`**
+or wired into the retrieval index yet — per the brief's own "cited and kept separate"
+framing, and because merging untested data into the active shortlist without a live run
+to confirm it doesn't regress retrieval on the existing 6 episodes/15 eval cases would be
+exactly the kind of unverified, complete-looking-but-not-actually-checked change this
+project has already been called out for once. Integrating it is a follow-up step once a
+full `--mode all` run confirms no regression.
+
 ## File structure
 
 ```
 main.py                 pipeline (single file, per review preference)
 test_connection.py      standalone key/model sanity check — run this first
 data/                   icd_catalog.json, guideline_snippets.json, episodes.json,
-                         provided_eval.json, custom_eval.json (the 5 new cases)
+                         provided_eval.json, custom_eval.json (the 5 new cases),
+                         icd_catalog_external.json, guideline_snippets_external.json
+                         (sourced addition, not yet merged into the active index —
+                         see "External data addition" above)
 cache/                  committed LLM response cache (enables --replay)
 outputs/                episodes_results.json, eval_results.json, custom_results.json
 CLAUDE.md               agent instructions (logging discipline, guardrails)

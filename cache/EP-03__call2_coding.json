@@ -1,0 +1,26 @@
+{
+  "case_id": "EP-03",
+  "call": "call2_coding",
+  "prompt_hash": "900f272751ae65a6",
+  "model": "gemini-3.6-flash",
+  "cached_at": "2026-09-02T17:21:55.607224+00:00",
+  "response": {
+    "codes": [
+      {
+        "code": "MC20",
+        "title": "Chest pain, unspecified",
+        "evidence_quotes": [
+          "chest pain since yesterday after unloading maize sacks.",
+          "pain fully reproducible on palpation of costochondral area"
+        ],
+        "confirmation_level": "confirmed",
+        "guideline_ids_used": [
+          "GDL-001"
+        ],
+        "reasoning": "The patient presented with musculoskeletal chest pain that was fully reproducible on costochondral palpation following physical activity. Per GDL-001, acute myocardial infarction (BA41) is excluded due to the reproducible musculoskeletal character and absence of ischemic features."
+      }
+    ],
+    "confidence": "high",
+    "no_confident_match": false
+  }
+}

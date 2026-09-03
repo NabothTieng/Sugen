@@ -1,26 +1,26 @@
 {
   "case_id": "EP-05",
   "call": "call2_coding",
-  "prompt_hash": "fae77317df94a2c3",
+  "prompt_hash": "af84aac173837f6d",
   "model": "gemini-3.6-flash",
-  "cached_at": "2026-09-01T21:59:29.873424+00:00",
+  "cached_at": "2026-09-03T00:10:46.280822+00:00",
   "response": {
     "codes": [
       {
         "code": "1C12",
         "title": "Tuberculosis of lung",
         "evidence_quotes": [
-          "kikohozi x3 wks",
-          "night sweats",
-          "wt loss 2kg",
-          "coughed streaks of blood",
-          "sputum sent for genexpert - result awaited"
+          "kikohozi x3 wks, not improving on amoxil.",
+          "night sweats, wt loss 2kg (mother says clothes loose).",
+          "yesterday coughed streaks of blood.",
+          "father had 'chest problem' treated 6 months in 2024",
+          "sputum sent for genexpert - result awaited."
         ],
         "confirmation_level": "suspected/pending",
         "guideline_ids_used": [
           "GDL-019"
         ],
-        "reasoning": "The patient presents with classic features of pulmonary tuberculosis including a chronic 3-week cough unresponsive to amoxicillin, hemoptysis, night sweats, unintentional weight loss, and household TB exposure, aligned with GDL-019. As sputum GeneXpert testing is pending and anti-TB treatment is withheld until test confirmation, the condition is coded as suspected/pending."
+        "reasoning": "The patient presented with classic symptoms of pulmonary TB (cough over 2 weeks, hemoptysis, night sweats, weight loss, and close contact exposure) per GDL-019. Because GeneXpert sputum results are pending and anti-TB treatment has not yet been initiated, 1C12 is assigned with a suspected/pending status rather than the bacteriologically confirmed code 1C12.1."
       }
     ],
     "confidence": "high",
